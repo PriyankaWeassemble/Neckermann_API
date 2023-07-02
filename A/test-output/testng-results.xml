@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-01T16:34:06 IST" name="Default suite" finished-at="2023-07-01T16:34:09 IST" duration-ms="2847">
+    <groups>
+    </groups>
+    <test started-at="2023-07-01T16:34:06 IST" name="Default test" finished-at="2023-07-01T16:34:09 IST" duration-ms="2847">
+      <class name="neckermannAPI_V3.GET_Itineraries_API">
+        <test-method signature="getitenariesforhotel()[pri:0, instance:neckermannAPI_V3.GET_Itineraries_API@6a84a97d]" started-at="2023-07-01T16:34:06 IST" name="getitenariesforhotel" finished-at="2023-07-01T16:34:09 IST" duration-ms="2816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getitenariesforhotel -->
+      </class> <!-- neckermannAPI_V3.GET_Itineraries_API -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
