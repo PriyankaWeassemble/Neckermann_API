@@ -107,13 +107,13 @@ public class Get_Packages_Listing_Page {
 	
 	{
 	
-	String payload=  //for the single guest selected
+	String payload=  //for the single guest selected //for the package Itenaries also
 			"{\r\n"
-			+ "    \"departure\": \"LON\",\r\n"
-			+ "    \"destination\": \"H000000192\",\r\n"
+			+ "    \"departure\": \"LDY\",\r\n"
+			+ "    \"destination\": \"S000000875\",\r\n"
 			+ "\r\n"
-			+ "    \"departureDate\": \"2023-07-28\",\r\n"
-			+ "    \"returnDate\":    \"2023-07-30\",\r\n"
+			+ "    \"departureDate\": \"2023-07-19\",\r\n"
+			+ "    \"returnDate\":    \"2023-07-29\",\r\n"
 			+ "\r\n"
 			+ "    \"rooms\": [\r\n"
 			+ "        {\r\n"

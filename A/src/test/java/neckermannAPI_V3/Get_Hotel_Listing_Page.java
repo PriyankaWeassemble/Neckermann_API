@@ -101,49 +101,49 @@ public class Get_Hotel_Listing_Page {  //*********//NV-306//*********//
 
 		
 		//1.1
-		String payload11=  //for the single guest selected
-				"{\r\n"
-				+ "  \"stay\": {\r\n"
-				+ "    \"checkIn\": \"2023-06-23\",\r\n"
-				+ "    \"checkOut\": \"2023-06-29\"\r\n"
-				+ "  },\r\n"
-				+ "  \"rooms\": [\r\n"
-				+ "    {\r\n"
-				+ "      \"guests\": [\r\n"
-				+ "        {\r\n"
-				+ "          \"type\": \"adult\",\r\n"
-				+ "          \"age\": 3\r\n"
-				+ "        }, {\r\n"
-				+ "          \"type\": \"child\",\r\n"
-				+ "          \"age\": 2\r\n"
-				+ "        },\r\n"
-				+ "        {\r\n"
-				+ "          \"type\": \"infant\",\r\n"
-				+ "          \"age\": six\r\n"
-				+ "        }\r\n"
-				+ "      ]\r\n"
-				+ "    }\r\n"
-				+ "  ],\r\n"
-				+ "  \"destinations\": [\r\n"
-				+ "    \"A000000729\"\r\n"
-				+ "  ]\r\n"
-				+ "}";
-		
-		
-		given()
-		.contentType("application/json")
-		.body(payload11)
-		
-		
-		.when()
-		.post("https://apidev.neckermanntravel.co.uk/hotel-enquiry")
-		
-		
-		 .then()
-		 .log().ifError() //for getting the error message
-		 .statusCode(200)
-	
-		 .log().all();
+//		String payload11=  //for the single guest selected
+//				"{\r\n"
+//				+ "  \"stay\": {\r\n"
+//				+ "    \"checkIn\": \"2023-06-23\",\r\n"
+//				+ "    \"checkOut\": \"2023-06-29\"\r\n"
+//				+ "  },\r\n"
+//				+ "  \"rooms\": [\r\n"
+//				+ "    {\r\n"
+//				+ "      \"guests\": [\r\n"
+//				+ "        {\r\n"
+//				+ "          \"type\": \"adult\",\r\n"
+//				+ "          \"age\": 3\r\n"
+//				+ "        }, {\r\n"
+//				+ "          \"type\": \"child\",\r\n"
+//				+ "          \"age\": 2\r\n"
+//				+ "        },\r\n"
+//				+ "        {\r\n"
+//				+ "          \"type\": \"infant\",\r\n"
+//				+ "          \"age\": six\r\n"
+//				+ "        }\r\n"
+//				+ "      ]\r\n"
+//				+ "    }\r\n"
+//				+ "  ],\r\n"
+//				+ "  \"destinations\": [\r\n"
+//				+ "    \"A000000729\"\r\n"
+//				+ "  ]\r\n"
+//				+ "}";
+//		
+//		
+//		given()
+//		.contentType("application/json")
+//		.body(payload11)
+//		
+//		
+//		.when()
+//		.post("https://apidev.neckermanntravel.co.uk/hotel-enquiry")
+//		
+//		
+//		 .then()
+//		 .log().ifError() //for getting the error message
+//		 .statusCode(200)
+//	
+//		 .log().all();
 //		
 //		//2. for 1 room and 3 guest-->1 guest,1 child, 1 infant
 //				String payload1=  //for the single guest selected
@@ -247,6 +247,45 @@ public class Get_Hotel_Listing_Page {  //*********//NV-306//*********//
 //		 .log().all();
 
 
+		//For the itenaries
+				//for the single guest selected
+				
+				
+		String payload= "{\r\n"
+					+ "  \"stay\": {\r\n"
+					+ "    \"checkIn\": \"2023-07-18\",\r\n"
+					+ "    \"checkOut\": \"2023-07-25\"\r\n"
+					+ "  },\r\n"
+					+ "  \"rooms\": [\r\n"
+					+ "    {\r\n"
+					+ "      \"guests\": [\r\n"
+					+ "        {\r\n"
+					+ "          \"type\": \"adult\"\r\n"
+//					+ "          \"age\": 0\r\n"
+					+ "        }\r\n"
+					+ "      ]\r\n"
+					+ "    }\r\n"
+					+ "  ],\r\n"
+					+ "  \"destinations\": [\r\n"
+					+ "    \"A000000729\"\r\n"
+					+ "  ]\r\n"
+					+ "}";
+		
+		
+		given()
+		.contentType("application/json")
+		.body(payload)
+		
+		
+		.when()
+		.post("https://apidev.neckermanntravel.co.uk/hotel-enquiry")
+		
+		
+		 .then()
+		 .log().ifError() //for getting the error message
+		 .statusCode(200)
+	
+		 .log().all();
 		
 		
 		
