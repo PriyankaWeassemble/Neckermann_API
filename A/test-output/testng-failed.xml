@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="neckermannAPI_V3.GET_Bags_API">
+      <class name="automation_practice.Neckermann_Search_Hotel">
         <methods>
-          <include name="getitenariesforpackage"/>
+          <include name="hotelsearch"/>
         </methods>
-      </class> <!-- neckermannAPI_V3.GET_Bags_API -->
+      </class> <!-- automation_practice.Neckermann_Search_Hotel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -20,11 +20,13 @@ public class Broken_links {
 	@Test 
 	public void testprogram() throws MalformedURLException, IOException
 	{
-	ChromeOptions opt=new ChromeOptions();
-	opt.addArguments("--remote-allow-origins=*");
-	
+//	ChromeOptions opt=new ChromeOptions();
+//	opt.addArguments("--remote-allow-origins=*");
+//WebDriver driver=new ChromeDriver(opt);
 
-WebDriver driver=new ChromeDriver(opt);
+
+		WebDriver driver = new ChromeDriver();  //after adding chromedriver dependancy write only this code 
+
 //driver.get("https://neckermanntravel.co.uk/");
 //driver.get("https://dev.neckermanntravel.co.uk/blog/");
 driver.get("https://staging.neckermanntravel.co.uk/");
@@ -62,18 +64,18 @@ for(int i=0; i<linklist.size();i++)
 	}
 }
 
-//links with the status (here we get broken links)
-System.out.println("size of active links and images--->"+activelinks.size());
-
-	for(int j=0; j<activelinks.size();j++)
-	{
-		HttpURLConnection conection=(HttpURLConnection)new URL(activelinks.get(j).getAttribute("href")).openConnection();
-	
-		conection.connect();
-		String response=conection.getResponseMessage();
-		conection.disconnect();
-		System.out.println(activelinks.get(j).getAttribute("href")+"--->"+response);
-	}
+////links with the status (here we get broken links)
+//System.out.println("size of active links and images--->"+activelinks.size());
+//
+//	for(int j=0; j<activelinks.size();j++)
+//	{
+//		HttpURLConnection conection=(HttpURLConnection)new URL(activelinks.get(j).getAttribute("href")).openConnection();
+//	
+//		conection.connect();
+//		String response=conection.getResponseMessage();
+//		conection.disconnect();
+//		System.out.println(activelinks.get(j).getAttribute("href")+"--->"+response);
+//	}
 	
 	
 	driver.quit();

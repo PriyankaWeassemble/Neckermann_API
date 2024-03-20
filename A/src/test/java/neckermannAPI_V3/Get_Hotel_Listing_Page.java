@@ -253,8 +253,8 @@ public class Get_Hotel_Listing_Page {  //*********//NV-306//*********//
 				
 		String payload= "{\r\n"
 					+ "  \"stay\": {\r\n"
-					+ "    \"checkIn\": \"2023-07-18\",\r\n"
-					+ "    \"checkOut\": \"2023-07-25\"\r\n"
+					+ "    \"checkIn\": \"2023-07-28\",\r\n"
+					+ "    \"checkOut\": \"2023-07-30\"\r\n"
 					+ "  },\r\n"
 					+ "  \"rooms\": [\r\n"
 					+ "    {\r\n"
