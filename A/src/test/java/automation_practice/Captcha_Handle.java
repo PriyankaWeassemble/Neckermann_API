@@ -49,23 +49,14 @@ public class Captcha_Handle {
 		
 		
 		
-		
+		// ****************To Read the image Data *************
+        WebElement imageelement = driver.findElement(By.cssSelector(".geetest_wrap"));// use css selector not xpath
         
-        
-        
-        
-        
-
-		
-		
-		
-        WebElement imageelement = driver.findElement(By.cssSelector(".geetest_wrap"));
-//		WebElement imageelement=driver.findElement(By.xpath("//canvas[@class='geetest_canvas_slice geetest_absolute']"));
-//		
 		File src=imageelement.getScreenshotAs(OutputType.FILE);
 		String path="C:\\Users\\Priyanka Lanjekar\\git\\Neckermann_API\\A\\CaptchaImages\\captcha.png";
-		FileHandler.copy(src, new File(path));
+		//Create captchaimage folder in project and copy it's path
 		
+		FileHandler.copy(src, new File(path));
 		Thread.sleep(2000);
 		
 		ITesseract image =new Tesseract();
